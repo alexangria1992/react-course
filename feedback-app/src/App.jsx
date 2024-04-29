@@ -8,7 +8,7 @@ import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import RatingSelect from "./components/RatingSelect";
 import About from "./pages/AboutPage";
-
+import AboutIconLink from "./components/AboutIconLink";
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
   const deleteFeedback = (id) => {
@@ -45,6 +45,7 @@ function App() {
           ></Route>
           <Route path="/about" element={<About />} />
         </Routes>
+        <AboutIconLink />
       </div>
     </Router>
   );
