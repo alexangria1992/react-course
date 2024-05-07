@@ -77,8 +77,8 @@ function Listing() {
             ? listing.discountedPrice
                 .toString()
                 .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-            : listing
-                .regularPricetoString()
+            : listing.regularPrice
+                .toString()
                 .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
         </p>
         <p className='listingLocation'>{listing.location}</p>
